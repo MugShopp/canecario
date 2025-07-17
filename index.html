@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CANECÁRIO - Canecas Personalizadas</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    /* Faixa rotativa */
+    .top-banner {
+      background-color: #2f2f2f;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      font-weight: bold;
+      animation: marquee 15s linear infinite;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    @keyframes marquee {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+
+    header img {
+      max-width: 200px;
+    }
+
+    section {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 2em;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .separator {
+      border-top: 1px solid #ccc;
+      margin: 40px 0;
+    }
+
+    .carousel-container {
+      display: flex;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .carousel-track {
+      display: flex;
+      animation: scroll 30s linear infinite;
+    }
+
+    .carousel-track img {
+      height: 200px;
+      margin-right: 15px;
+      border-radius: 5px;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    .whatsapp-button {
+      display: block;
+      width: max-content;
+      background-color: #2f2f2f;
+      color: white;
+      padding: 15px 25px;
+      margin: 20px auto;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .static-banner {
+      background-color: #2f2f2f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #f4f4f4;
+      color: #000;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      .carousel-track img {
+        height: 140px;
+      }
+
+      h1 {
+        font-size: 1.5em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Faixa superior rotativa -->
+  <div class="top-banner">Faça seu pedido pelo WhatsApp! Aceitamos Pix!</div>
+
+  <!-- Logotipo -->
+  <header>
+    <img src="https://i.postimg.cc/tJf271Sw/Canecas-Personalizadas-20250717-091717-0000.png" alt="Logotipo CANECÁRIO" />
+  </header>
+
+  <!-- Hero Section -->
+  <section>
+    <h1>Canecas que Contam Histórias</h1>
+    <p style="text-align: center; max-width: 800px; margin: auto;">
+      Na <strong>CANECÁRIO</strong>, cada caneca é mais do que um objeto — é uma extensão da sua personalidade, um presente carregado de afeto ou uma lembrança que aquece. Com um olhar cuidadoso para o design e um compromisso com a qualidade, personalizamos canecas para celebrar momentos, ideias e emoções. Escolha, crie e eternize o que te inspira.
+    </p>
+  </section>
+
+  <div class="separator"></div>
+
+  <!-- Galeria de Fotos - Carrossel -->
+  <section>
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <img src="https://i.postimg.cc/pyNBxdK8/FB-IMG-1743016661563.jpg" alt="Caneca 1">
+        <img src="https://i.postimg.cc/76cYm6pv/IMG-20250701-155719.jpg" alt="Caneca 2">
+        <img src="https://i.postimg.cc/VspdFG8S/IMG-20250701-160305.jpg" alt="Caneca 3">
+        <img src="https://i.postimg.cc/TwxzVWdN/IMG-20250701-160402.jpg" alt="Caneca 4">
+        <img src="https://i.postimg.cc/ZKD5g9DX/IMG-20240709-111136.jpg" alt="Caneca 5">
+        <img src="https://i.postimg.cc/Cx3Lh30N/Photoroom-20240703-160403.png" alt="Caneca 6">
+      </div>
+    </div>
+  </section>
+
+  <div class="separator"></div>
+
+  <!-- Botão WhatsApp -->
+  <a href="https://wa.me/5512991376349" class="whatsapp-button" target="_blank">Fazer pedido via WhatsApp</a>
+  <p style="text-align: center;">Faça seu pedido pelo WhatsApp!</p>
+
+  <div class="separator"></div>
+
+  <!-- Texto sobre sublimação -->
+  <section>
+    <h2 style="text-align: center;">Personalização por Sublimação</h2>
+    <p style="text-align: center; max-width: 800px; margin: auto;">
+      Trabalhamos com o processo de <strong>sublimação</strong>, uma técnica que garante alta durabilidade, cores vivas e acabamento profissional. A sublimação permite personalizar canecas com fotos, frases, logotipos e artes exclusivas — sem desbotar ou descascar. Ideal para presentes, brindes e lembranças marcantes.
+    </p>
+  </section>
+
+  <div class="separator"></div>
+
+  <!-- Banner Estático -->
+  <div class="static-banner">Enviamos via Correios para todo o Brasil!</div>
+
+  <!-- Rodapé -->
+  <footer>
+    <p><strong>CANECÁRIO</strong> | (12) 99137-6349 | Redenção da Serra/SP</p>
+    <p>© 2025 CANECÁRIO – Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
